@@ -1,0 +1,146 @@
+/* Encabezado principal */
+.career-tag {
+  background-color: #7B2E2E;
+  border: 2px solid #5C2020;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 4rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones de ciclo (CBC, CFG, CFO, Idiomas) */
+.career-tag-1 {
+  background-color: #F3E1B6;
+  color: #5C2020;
+  border: 2px solid #E2C88C;
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.3rem;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.career-tag-1:hover {
+  background-color: #e8d6aa;
+  cursor: pointer;
+}
+
+/* Botones de materias */
+.materia-btn {
+  width: 480px;
+  background-color: #5C2020;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.materia-btn:hover {
+  background-color: #7B2E2E;
+  transform: scale(1.02);
+}
+
+/* Botones deshabilitados */
+.btn-materia.disabled {
+  background-color: #B8701B !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Botones tachados */
+button.tachado {
+  text-decoration: line-through !important;
+  opacity: 0.6;
+  color: #555 !important;
+}
+
+/* Contenedor de materias */
+.materias-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
+}
+
+/* Barra de progreso */
+#barraProgreso {
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progresoInterno {
+  background-color: #7B2E2E !important;
+  transition: width 0.3s ease;
+  font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Responsive */
+html, body {
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FAF8F3;
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* Botones de materias fijas (CFO) */
+.materia-fija-subbtn {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Botones de idiomas */
+.materia-btn[data-id^="180"] {
+  background-color: #2E5C7B; /* Azul académico */
+  border: 2px solid #1F3F56;
+}
+
+.materia-btn[data-id^="180"]:hover {
+  background-color: #3A6C8F;
+}
+
+/* Animación de apertura */
+#cbcContainer,
+#cfgContainer,
+#cfoContainer,
+#idiomasContainer {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
