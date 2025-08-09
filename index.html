@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciencias Antropológicas - UBA</title>
+  <link rel="stylesheet" href="antropo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="career-tag">
+  Ciencias Antropológicas
+</div>
+
+<div id="barraProgreso" class="progress" style="height: 25px; margin-bottom:15px;">
+  <div id="progresoInterno" class="progress-bar bg-success" role="progressbar" style="width: 0%;">
+    0%
+  </div>
+</div>
+
+<!-- CICLO BÁSICO COMÚN (CBC) - desplegable -->
+<button id="toggleCBC" class="career-tag-1 text-center" style="cursor: pointer; width: 100%;">
+  CICLO BÁSICO COMÚN (CBC)
+</button>
+<div id="cbcContainer" style="display: none; margin-top: 1rem;">
+  <div class="materias-wrapper d-flex justify-content-center flex-wrap">
+    <!-- Materias CBC -->
+    <button class="materia-btn mb-2 btn-materia" data-id="16001">Introducción al Conocimiento de la Sociedad y el Estado</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="16002">Introducción al Pensamiento Científico</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="16003">Antropología</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="16004">Filosofía</button>
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="16005">Electiva CBC 1</button>
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="16006">Electiva CBC 2</button>
+  </div>
+</div>
+
+<!-- CICLO DE FORMACIÓN GENERAL (CFG) -->
+<div class="career-tag-1 text-center">
+  CICLO DE FORMACIÓN GENERAL (CFG)
+</div>
+<div id="cfgContainer" style="margin-top: 1rem;">
+  <div class="materias-wrapper d-flex justify-content-center flex-wrap">  <!-- Las materias ya estaban bien listadas, solo se reordenan si es necesario -->
+    <!-- Listado de materias del ciclo de formación general según Plan 2023 (equivalente al 1985) --> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17001">Epistemología de las Ciencias Sociales</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17002">Historia y Teoría de la Antropología I</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17003">Historia y Teoría de la Antropología II</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17004">Problemas de Antropología Social y Política</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17005">Problemas de Antropología Económica</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17006">Problemas de Antropología Simbólica</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17007">Antropología Biológica</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17008">Introducción a la Arqueología</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17009">Arqueología, Legislación y Comunidad</button> 
+     <button class="materia-btn mb-2 btn-materia" data-id="17010">Sociedades, Culturas y Estados en América Prehispánica y Colonial</button>
+  </div>
+</div>
+
+<!-- CICLO DE FORMACIÓN ORIENTADA (CFO) - ORIENTACIÓN ARQUEOLOGÍA -->
+<div class="career-tag-1 text-center">
+  CICLO DE FORMACIÓN ORIENTADA – ORIENTACIÓN ARQUEOLOGÍA
+</div>
+<div id="cfoContainer" style="margin-top: 1rem;">
+  <div class="materias-wrapper d-flex justify-content-center flex-wrap">  <button class="materia-btn mb-2 btn-materia" data-id="17031">Arqueología de África, Eurasia y Oceanía</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17032">Arqueología Americana y Argentina I</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17033">Arqueología Americana y Argentina II</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17034">Arqueología Argentina</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17035">Materiales Arqueológicos y sus Tecnologías</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17036">Geología para Arqueólogos</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17037">Teorías Arqueológicas Contemporáneas</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17038">Modelos y Métodos de Análisis en Arqueología</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17039">Metodología y Técnicas de la Investigación Arqueológica</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17040">Métodos Cuantitativos en Arqueología</button>
+    <!-- Electivas -->
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="17041">Electiva Orientación Arqueología 1</button>
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="17042">Electiva Orientación Arqueología 2</button>
+    <!-- Seminarios -->
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="17043">Seminario Orientación Arqueología</button>
+    <button class="materia-btn mb-2 btn-materia optativa" data-id="17044">Seminario PST</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="17045">Seminario de Investigación en Arqueología, Trabajo de Campo y Laboratorio</button>
+  </div>
+</div>
+<!-- IDIOMAS -->
+<div class="career-tag-1 text-center">
+  IDIOMAS
+</div>
+<div id="idiomasContainer" style="margin-top: 1rem;">
+  <div class="materias-wrapper d-flex justify-content-center flex-wrap">
+    <!-- Idioma Sajón -->
+    <button class="materia-btn mb-2 btn-materia" data-id="18001">Idioma Sajón – Nivel Elemental</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="18002" data-depends-on="18001">Idioma Sajón – Nivel Medio</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="18003" data-depends-on="18002">Idioma Sajón – Nivel Superior</button>
+    <!-- Idioma Latino -->
+    <button class="materia-btn mb-2 btn-materia" data-id="18004">Idioma Latino – Nivel Elemental</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="18005" data-depends-on="18004">Idioma Latino – Nivel Medio</button>
+    <button class="materia-btn mb-2 btn-materia" data-id="18006" data-depends-on="18005">Idioma Latino – Nivel Superior</button>
+  </div>
+</div>
+
+
+<script src="antropo.js"></script>
+</body>
+</html>
